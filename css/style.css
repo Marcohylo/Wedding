@@ -2975,3 +2975,181 @@ form label {
     margin-top: auto;       /* pushes paragraph block down a bit for consistency */
   }
 }
+
+/* Sticky icon bar with slide-out labels */
+.sticky-cal2{
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.sticky-cal2__item{
+  position: relative;
+  width: 44px;
+  height: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 6px;
+  text-decoration: none;
+
+  background: rgba(255,255,255,0.9);
+  box-shadow: 0 10px 25px -15px rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.5);
+  overflow: visible;
+}
+
+/* icon */
+.sticky-cal2__icon{
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(108, 173, 223);
+  font-size: 18px;
+}
+
+/* slide-out label */
+.sticky-cal2__label{
+  position: absolute;
+  right: 52px;              /* sits to the left of the button */
+  top: 50%;
+  transform: translateY(-50%);
+
+  background: rgba(255,255,255,0.95);
+  color: #2b2b2b;
+  font-size: 13px;
+  padding: 10px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+
+  box-shadow: 0 10px 25px -15px rgba(0,0,0,0.8);
+  border: 1px solid rgba(255,255,255,0.5);
+
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(8px, -50%); /* start slightly hidden */
+  transition: all 180ms ease;
+}
+
+.sticky-cal2__item:hover .sticky-cal2__label{
+  opacity: 1;
+  transform: translate(0, -50%);
+}
+
+/* Optional: different colours per button */
+.sticky-cal2__item:nth-child(1) .sticky-cal2__icon{ color: #4285F4; } /* Google */
+.sticky-cal2__item:nth-child(2) .sticky-cal2__icon{ color: #4CAF50; } /* Calendar */
+
+/* Mobile: make it a bottom bar instead (so it doesn't block content) */
+@media (max-width: 768px){
+  .sticky-cal2{
+    left: 12px;
+    right: 12px;
+    top: auto;
+    bottom: 12px;
+    transform: none;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .sticky-cal2__item{
+    width: 50%;
+    max-width: 240px;
+  }
+  .sticky-cal2__label{
+    display: none; /* labels off on mobile (optional) */
+  }
+}
+.sticky-cal2 {
+  position: fixed;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+}
+
+.sticky-cal2__item {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 6px;
+  background: #fff;
+  color: #333;
+  text-decoration: none;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.sticky-cal2__icon {
+  font-size: 18px;
+}
+
+/* hide text by default (desktop) */
+.sticky-cal2__text {
+  display: none;
+  margin-left: 8px;
+  font-size: 14px;
+  white-space: nowrap;
+}
+@media (max-width: 768px) {
+  .sticky-cal2 {
+    right: 8px;
+    top: auto;
+    bottom: 20px;
+    transform: none;
+  }
+
+  .sticky-cal2__item {
+    padding: 10px 14px;
+  }
+
+  .sticky-cal2__text {
+    display: inline-block;
+  }
+}
+
+.scroll-down-arrow {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.scroll-down-arrow span {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-right:8px solid #fff;
+  border-bottom: 8px solid #fff;
+  transform: rotate(45deg);
+  margin: auto;
+  animation: arrowBounce 2.5s infinite;
+}
+@keyframes arrowBounce {
+  0%   { transform: rotate(45deg) translate(0, 0); }
+  50%  { transform: rotate(45deg) translate(6px, 6px); }
+  100% { transform: rotate(45deg) translate(0, 0); }
+}
+.scroll-down-arrow:hover span {
+  opacity: 0.7;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
