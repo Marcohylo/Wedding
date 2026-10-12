@@ -258,16 +258,16 @@ From that first meeting, our journey together began.</p>
 
 <li class="one-third animate-box" data-animate-effect="fadeIn"
       style="background-image: url(images/home-kong-album.jpg);">
-    <a href="#" class="album-cover" data-album="Home Kong">
+    <a href="#" class="album-cover" data-album="HomeKong">
       <div class="case-studies-summary">
-        <span class="album-count" data-album="Home Kong"></span>
+        <span class="album-count" data-album="HomeKong"></span>
         <h2>Home Kong</h2>
       </div>
     </a>
   </li>
 
   <li class="one-third animate-box" data-animate-effect="fadeIn"
-      style="background-image: url(images/album-japan-cover.jpg);">
+      style="background-image: url(images/japan-album.jpg);">
     <a href="#" class="album-cover" data-album="Japan">
       <div class="case-studies-summary">
         <span class="album-count" data-album="Japan"></span>
@@ -889,156 +889,120 @@ mobileLinks.forEach(link => {
   (function () {
   // 1) Put your real image filenames here (in /images/)
   var albums = {
-    china: [
-      { src: 'images/china-01.jpg' }, 
-      { src: 'images/china-02.jpg' },
-      { src: 'images/china-03.jpg' }
+    China: [
+      { src: 'images/China/china-01.jpg' }, 
+      { src: 'images/China/china-02.jpg' },
+      { src: 'images/China/china-03.jpg' },
+      { src: 'images/China/china-04.jpg' }, 
+      { src: 'images/China/china-05.jpg' },
+      { src: 'images/China/china-06.jpg' },
+      { src: 'images/China/china-07.jpg' }, 
+      { src: 'images/China/china-08.jpg' },
+      { src: 'images/China/china-09.jpg' },
+      { src: 'images/China/china-10.jpg' }, 
+      { src: 'images/China/china-11.jpg' },
+      { src: 'images/China/china-12.jpg' },
+      { src: 'images/China/china-13.jpg' }, 
+      { src: 'images/China/china-14.jpg' },
+      { src: 'images/China/china-15.jpg' },
     ],
-    flowersea: [
-{ src: 'images/flower-sea/flower-sea-01.jpg' },
-{ src: 'images/flower-sea/flower-sea-02.jpg' },
-{ src: 'images/flower-sea/flower-sea-03.jpg' },
-{ src: 'images/flower-sea/flower-sea-04.jpg' },
-{ src: 'images/flower-sea/flower-sea-05.jpg' },
-{ src: 'images/flower-sea/flower-sea-06.jpg' },
-{ src: 'images/flower-sea/flower-sea-07.jpg' },
-{ src: 'images/flower-sea/flower-sea-08.jpg' },
-{ src: 'images/flower-sea/flower-sea-09.jpg' },
-{ src: 'images/flower-sea/flower-sea-10.jpg' },
-{ src: 'images/flower-sea/flower-sea-11.jpg' },
-{ src: 'images/flower-sea/flower-sea-12.jpg' },
-{ src: 'images/flower-sea/flower-sea-13.jpg' },
-{ src: 'images/flower-sea/flower-sea-14.jpg' },
-{ src: 'images/flower-sea/flower-sea-15.jpg' },
-{ src: 'images/flower-sea/flower-sea-16.jpg' },
-{ src: 'images/flower-sea/flower-sea-17.jpg' },
-{ src: 'images/flower-sea/flower-sea-18.jpg' },
-{ src: 'images/flower-sea/flower-sea-19.jpg' },
-{ src: 'images/flower-sea/flower-sea-20.jpg' },
 
+    HomeKong: [
+      { src: 'images/HomeKong/Home-Kong1.jpg' },
+      { src: 'images/HomeKong/Home-Kong2.jpg' },
+      { src: 'images/HomeKong/Home-Kong3.jpg' },
+      { src: 'images/HomeKong/Home-Kong4.jpg' },
+      { src: 'images/HomeKong/Home-Kong5.jpg' },
+      { src: 'images/HomeKong/Home-Kong6.jpg' },
+      { src: 'images/HomeKong/Home-Kong7.jpg' },
+      { src: 'images/HomeKong/Home-Kong8.jpg' },
+      { src: 'images/HomeKong/Home-Kong9.jpg' },
+      { src: 'images/HomeKong/Home-Kong10.jpg' },
+      { src: 'images/HomeKong/Home-Kong11.jpg' },
+      { src: 'images/HomeKong/Home-Kong12.jpg' },
     ],
-    hongkong: [
-      { src: 'images/hongkong-01.jpg' },
-      { src: 'images/hongkong-02.jpg' },
-      { src: 'images/hongkong-03.jpg' }
+
+    Japan: [
+      { src: 'images/Japan/japan-01.jpg' },
+      { src: 'images/Japan/japan-02.jpg' },
+      { src: 'images/Japan/japan-03.jpg' },
+      { src: 'images/Japan/japan-04.jpg' },
+      { src: 'images/Japan/japan-05.jpg' },
+      { src: 'images/Japan/japan-06.jpg' },
+      { src: 'images/Japan/japan-07.jpg' },
+      { src: 'images/Japan/japan-08.jpg' },
+      { src: 'images/Japan/japan-09.jpg' },
+      { src: 'images/Japan/japan-10.jpg' },
+      { src: 'images/Japan/japan-11.jpg' },
+      { src: 'images/Japan/japan-12.jpg' },
+      { src: 'images/Japan/japan-13.jpg' },
+      { src: 'images/Japan/japan-14.jpg' },
+      { src: 'images/Japan/japan-15.jpg' },
+      { src: 'images/Japan/japan-16.jpg' },
+      { src: 'images/Japan/japan-17.jpg' },
+    
     ],
-    japan: [
-      { src: 'images/japan-01.jpg' },
-      { src: 'images/japan-02.jpg' },
-      { src: 'images/japan-03.jpg' }
-    ],
-    melbourne: [
-  { src: 'images/melbourne/melbourne-01.jpg' },
-  { src: 'images/melbourne/melbourne-02.jpg' },
-  { src: 'images/melbourne/melbourne-03.jpg' },
-  { src: 'images/melbourne/melbourne-04.jpg' },
-  { src: 'images/melbourne/melbourne-05.jpg' },
-  { src: 'images/melbourne/melbourne-06.jpg' },
-  { src: 'images/melbourne/melbourne-07.jpg' },
-  { src: 'images/melbourne/melbourne-08.jpg' },
-  { src: 'images/melbourne/melbourne-09.jpg' },
-  { src: 'images/melbourne/melbourne-10.jpg' },
+    Melbourne: [
+  { src: 'images/Melbourne/melbourne-01.jpg' },
+  { src: 'images/Melbourne/melbourne-02.jpg' },
+  { src: 'images/Melbourne/melbourne-03.jpg' },
+  { src: 'images/Melbourne/melbourne-04.jpg' },
+  { src: 'images/Melbourne/melbourne-05.jpg' },
+  { src: 'images/Melbourne/melbourne-06.jpg' },
+  { src: 'images/Melbourne/melbourne-07.jpg' },
+  { src: 'images/Melbourne/melbourne-08.jpg' },
+  { src: 'images/Melbourne/melbourne-09.jpg' },
+  { src: 'images/Melbourne/melbourne-10.jpg' },
 
-  { src: 'images/melbourne/melbourne-11.jpg' },
-  { src: 'images/melbourne/melbourne-12.jpg' },
-  { src: 'images/melbourne/melbourne-13.jpg' },
-  { src: 'images/melbourne/melbourne-14.jpg' },
-  { src: 'images/melbourne/melbourne-15.jpg' },
-  { src: 'images/melbourne/melbourne-16.jpg' },
-  { src: 'images/melbourne/melbourne-17.jpg' },
-  { src: 'images/melbourne/melbourne-18.jpg' },
-  { src: 'images/melbourne/melbourne-19.jpg' },
-  { src: 'images/melbourne/melbourne-20.jpg' },
+  { src: 'images/Melbourne/melbourne-11.jpg' },
+  { src: 'images/Melbourne/melbourne-12.jpg' },
+  { src: 'images/Melbourne/melbourne-13.jpg' },
+  { src: 'images/Melbourne/melbourne-14.jpg' },
+  { src: 'images/Melbourne/melbourne-15.jpg' },
+  { src: 'images/Melbourne/melbourne-16.jpg' },
+  { src: 'images/Melbourne/melbourne-17.jpg' },
 
-  { src: 'images/melbourne/melbourne-21.jpg' },
-  { src: 'images/melbourne/melbourne-22.jpg' },
-  { src: 'images/melbourne/melbourne-23.jpg' },
-  { src: 'images/melbourne/melbourne-24.jpg' },
-  { src: 'images/melbourne/melbourne-25.jpg' },
-  { src: 'images/melbourne/melbourne-26.jpg' },
-  { src: 'images/melbourne/melbourne-27.jpg' },
-  { src: 'images/melbourne/melbourne-28.jpg' },
-  { src: 'images/melbourne/melbourne-29.jpg' },
-  { src: 'images/melbourne/melbourne-30.jpg' },
-
-  { src: 'images/melbourne/melbourne-31.jpg' },
-  { src: 'images/melbourne/melbourne-32.jpg' },
-  { src: 'images/melbourne/melbourne-33.jpg' },
-  { src: 'images/melbourne/melbourne-34.jpg' },
-  { src: 'images/melbourne/melbourne-35.jpg' },
-  { src: 'images/melbourne/melbourne-36.jpg' },
-  { src: 'images/melbourne/melbourne-37.jpg' },
-  { src: 'images/melbourne/melbourne-38.jpg' },
-  { src: 'images/melbourne/melbourne-39.jpg' },
-  { src: 'images/melbourne/melbourne-40.jpg' },
-
-  { src: 'images/melbourne/melbourne-41.jpg' },
-  { src: 'images/melbourne/melbourne-42.jpg' },
-  { src: 'images/melbourne/melbourne-43.jpg' },
-  { src: 'images/melbourne/melbourne-44.jpg' },
-  { src: 'images/melbourne/melbourne-45.jpg' },
-  { src: 'images/melbourne/melbourne-46.jpg' },
-  { src: 'images/melbourne/melbourne-47.jpg' },
-  { src: 'images/melbourne/melbourne-48.jpg' },
-  { src: 'images/melbourne/melbourne-49.jpg' },
-  { src: 'images/melbourne/melbourne-50.jpg' },
-
-  { src: 'images/melbourne/melbourne-51.jpg' },
-  { src: 'images/melbourne/melbourne-52.jpg' },
-  { src: 'images/melbourne/melbourne-53.jpg' },
-  { src: 'images/melbourne/melbourne-54.jpg' },
-  { src: 'images/melbourne/melbourne-55.jpg' },
-  { src: 'images/melbourne/melbourne-56.jpg' },
-  { src: 'images/melbourne/melbourne-57.jpg' },
-  { src: 'images/melbourne/melbourne-58.jpg' },
-  { src: 'images/melbourne/melbourne-59.jpg' },
-  { src: 'images/melbourne/melbourne-60.jpg' },
-
-  { src: 'images/melbourne/melbourne-61.jpg' },
-  { src: 'images/melbourne/melbourne-62.jpg' },
-  { src: 'images/melbourne/melbourne-63.jpg' },
-  { src: 'images/melbourne/melbourne-64.jpg' },
-  { src: 'images/melbourne/melbourne-65.jpg' },
-  { src: 'images/melbourne/melbourne-66.jpg' },
-  { src: 'images/melbourne/melbourne-67.jpg' },
-  { src: 'images/melbourne/melbourne-68.jpg' },
-  { src: 'images/melbourne/melbourne-69.jpg' },
-  { src: 'images/melbourne/melbourne-70.jpg' },
-
-  { src: 'images/melbourne/melbourne-71.jpg' },
-  { src: 'images/melbourne/melbourne-72.jpg' }
 ],
-    tonga: [
-  { src: 'images/tonga/tonga-01.jpg' },
-  { src: 'images/tonga/tonga-02.jpg' },
-  { src: 'images/tonga/tonga-03.jpg' },
-  { src: 'images/tonga/tonga-04.jpg' },
-  { src: 'images/tonga/tonga-05.jpg' },
-  { src: 'images/tonga/tonga-06.jpg' },
-  { src: 'images/tonga/tonga-07.jpg' },
-  { src: 'images/tonga/tonga-08.jpg' },
-  { src: 'images/tonga/tonga-09.jpg' },
-  { src: 'images/tonga/tonga-10.jpg' }
+    Porsche: [
+  { src: 'images/Porsche/Porsche-01.jpg' },
+  { src: 'images/Porsche/Porsche-02.jpg' },
+  { src: 'images/Porsche/Porsche-03.jpg' },
+  { src: 'images/Porsche/Porsche-04.jpg' },
+  { src: 'images/Porsche/Porsche-05.jpg' },
+  { src: 'images/Porsche/Porsche-06.jpg' },
+  { src: 'images/Porsche/Porsche-07.jpg' },
+  { src: 'images/Porsche/Porsche-08.jpg' },
+  { src: 'images/Porsche/Porsche-09.jpg' },
+  { src: 'images/Porsche/Porsche-10.jpg' },
+  { src: 'images/Porsche/Porsche-11.jpg' },
+  { src: 'images/Porsche/Porsche-12.jpg' },
+  { src: 'images/Porsche/Porsche-13.jpg' },
+  { src: 'images/Porsche/Porsche-14.jpg' },
+  { src: 'images/Porsche/Porsche-15.jpg' },
+  { src: 'images/Porsche/Porsche-16.jpg' },
+  { src: 'images/Porsche/Porsche-17.jpg' },
+  { src: 'images/Porsche/Porsche-18.jpg' },
+  { src: 'images/Porsche/Porsche-19.jpg' },
 ],
 
-    australia: [
-  { src: 'images/australia/australia-01.jpg' },
-  { src: 'images/australia/australia-02.jpg' },
-  { src: 'images/australia/australia-03.jpg' },
-  { src: 'images/australia/australia-04.jpg' },
-  { src: 'images/australia/australia-05.jpg' },
-  { src: 'images/australia/australia-06.jpg' },
-  { src: 'images/australia/australia-07.jpg' },
-  { src: 'images/australia/australia-08.jpg' },
-  { src: 'images/australia/australia-09.jpg' },
-  { src: 'images/australia/australia-10.jpg' },
-  { src: 'images/australia/australia-11.jpg' },
-  { src: 'images/australia/australia-12.jpg' },
-  { src: 'images/australia/australia-13.jpg' },
-  { src: 'images/australia/australia-14.jpg' },
-  { src: 'images/australia/australia-15.jpg' },
-  { src: 'images/australia/australia-16.jpg' }
-    ]
+  //   australia: [
+  // { src: 'images/australia/australia-01.jpg' },
+  // { src: 'images/australia/australia-02.jpg' },
+  // { src: 'images/australia/australia-03.jpg' },
+  // { src: 'images/australia/australia-04.jpg' },
+  // { src: 'images/australia/australia-05.jpg' },
+  // { src: 'images/australia/australia-06.jpg' },
+  // { src: 'images/australia/australia-07.jpg' },
+  // { src: 'images/australia/australia-08.jpg' },
+  // { src: 'images/australia/australia-09.jpg' },
+  // { src: 'images/australia/australia-10.jpg' },
+  // { src: 'images/australia/australia-11.jpg' },
+  // { src: 'images/australia/australia-12.jpg' },
+  // { src: 'images/australia/australia-13.jpg' },
+  // { src: 'images/australia/australia-14.jpg' },
+  // { src: 'images/australia/australia-15.jpg' },
+  // { src: 'images/australia/australia-16.jpg' }
+  //   ]
 
   };
 
